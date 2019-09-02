@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace I\Love\Reaction\Exceptions;
 
 use I\Love\Exceptions\LoveThrowable;
-use Cog\Laravel\Love\Reaction\Models\Reaction;
+use I\Love\Reaction\Models\Reaction;
 use OutOfRangeException;
 
 final class RateOutOfRange extends OutOfRangeException implements
@@ -24,9 +24,7 @@ final class RateOutOfRange extends OutOfRangeException implements
     {
         return new self(sprintf(
             'Invalid Reaction rate: `%s`. Must be between `%s` and `%s`',
-            $rate,
-            Reaction::RATE_MIN,
-            Reaction::RATE_MAX
+            $rate, Reaction::RATE_MIN, Reaction::RATE_MAX
         ));
     }
 }
