@@ -1,0 +1,59 @@
+{
+  "name": "php-i/love",
+  "description": "Social Reactions System Interfaces",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "i",
+    "php-i",
+    "unitype",
+    "love",
+    "hate",
+    "likeable",
+    "likable",
+    "like",
+    "dislike",
+    "favorite",
+    "favourite",
+    "rate",
+    "rating",
+    "emotion",
+    "reaction",
+    "reactable",
+    "reacter",
+    "star",
+    "kudos",
+    "adore",
+    "unlike",
+    "undislike"
+  ],
+  "authors": [
+    {
+      "name": "Anton Komarev",
+      "email": "anton@komarev.com",
+      "homepage": "https://komarev.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/php-i/love",
+  "support": {
+    "email": "open@cybercog.su",
+    "issues": "https://github.com/php-i/love/issues",
+    "wiki": "https://github.com/php-i/love/wiki",
+    "source": "https://github.com/php-i/love",
+    "docs": "https://github.com/php-i/love/wiki"
+  },
+  "require": {
+    "php": "^7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "I\\Love\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}
