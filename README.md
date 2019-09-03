@@ -16,6 +16,10 @@ There are many different implementations in modern applications:
 
 The purpose of this package is to provide a set of common interfaces for Social Reactions System.
 
+## System Design
+
+![](https://user-images.githubusercontent.com/1849174/64136146-54373b00-cdf8-11e9-8696-96954c1a1e4c.png)
+
 ## Requirements
 
 - PHP >= 7.1.3
@@ -28,7 +32,7 @@ Pull in the package through Composer.
 $ composer require php-i/love
 ```
 
-## Frameworks support
+## Frameworks Support
 
 PHP I: Love is framework agnostic package, it doesn't depend on any PHP framework.
 
@@ -36,7 +40,7 @@ PHP I: Love is framework agnostic package, it doesn't depend on any PHP framewor
 
 **Haven't found your favorite framework in the list? [We are open](CONTRIBUTING.md) for Pull Requests!**
 
-## Change log
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
