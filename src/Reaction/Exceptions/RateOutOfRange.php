@@ -14,17 +14,16 @@ declare(strict_types=1);
 namespace I\Love\Reaction\Exceptions;
 
 use I\Love\Exceptions\LoveThrowable;
-use I\Love\Reaction\Models\Reaction;
 use OutOfRangeException;
 
 final class RateOutOfRange extends OutOfRangeException implements
     LoveThrowable
 {
-    public static function withValue(float $rate): self
+    public static function withValueBetween(float $rate, float $minimumRate, float $maximumRate): self
     {
         return new self(sprintf(
             'Invalid Reaction rate: `%s`. Must be between `%s` and `%s`',
-            $rate, Reaction::RATE_MIN, Reaction::RATE_MAX
+            $rate, $minimumRate, $maximumRate
         ));
     }
 }
