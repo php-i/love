@@ -14,11 +14,11 @@ declare(strict_types=1);
 namespace I\Love\Reacterable\Models;
 
 use I\Love\Reacter\Facades\Reacter as ReacterFacade;
-use I\Love\Reacter\Models\Reacter;
+use I\Love\Reacter\Models\Reacter as ReacterModel;
 
 interface Reacterable
 {
-    public function getLoveReacter(): Reacter;
+    public function getLoveReacter(): ReacterModel;
 
     public function viaLoveReacter(): ReacterFacade;
 

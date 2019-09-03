@@ -14,11 +14,11 @@ declare(strict_types=1);
 namespace I\Love\Reactable\Models;
 
 use I\Love\Reactant\Facades\Reactant as ReactantFacade;
-use I\Love\Reactant\Models\Reactant;
+use I\Love\Reactant\Models\Reactant as ReactantModel;
 
 interface Reactable
 {
-    public function getLoveReactant(): Reactant;
+    public function getLoveReactant(): ReactantModel;
 
     public function viaLoveReactant(): ReactantFacade;
 
