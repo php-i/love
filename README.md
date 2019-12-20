@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This package provides a set of common interfaces to implement Social Reactions System. if you do not want to create your own implementation follow to the [Social Reaction System Solutions](#implementations).
+PHP I: Love provides a set of common interfaces to implement Social Reactions System. If you don't want to create your own implementation follow to the out of the box [Social Reaction System Solutions](#implementations).
 
-PHP I: Love is emotional part of the application. It let people express how they feel about the content.
+This package is emotional part of the application. It let people express how they feel about the content.
 Make any model reactable in a minutes!
 
 There are many different implementations in modern applications:
