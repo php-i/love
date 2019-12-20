@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The purpose of this package is to provide a set of common interfaces for Social Reactions System.
+This package provides a set of common interfaces to implement Social Reactions System. if you do not want to create your own implementation follow to the [Social Reaction System Solutions](#implementations).
 
 PHP I: Love is emotional part of the application. It let people express how they feel about the content.
 Make any model reactable in a minutes!
@@ -32,9 +32,7 @@ Pull in the package through Composer.
 $ composer require php-i/love
 ```
 
-## Frameworks Support
-
-PHP I: Love is framework agnostic package, it doesn't depend on any PHP framework.
+## Implementations
 
 - [Laravel Love](https://github.com/cybercog/laravel-love#readme) maintained by [Anton Komarev]
 
