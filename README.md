@@ -2,6 +2,8 @@
 
 ## Introduction
 
+The purpose of this package is to provide a set of common interfaces for Social Reactions System.
+
 PHP I: Love is emotional part of the application. It let people express how they feel about the content.
 Make any model reactable in a minutes!
 
@@ -13,8 +15,6 @@ There are many different implementations in modern applications:
 - Slack Reactions
 - Reddit Votes
 - Medium Claps
-
-The purpose of this package is to provide a set of common interfaces for Social Reactions System.
 
 ## System Design
 
