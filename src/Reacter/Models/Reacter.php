@@ -16,8 +16,10 @@ namespace I\Love\Reacter\Models;
 use I\Love\Reactant\Models\Reactant;
 use I\Love\Reacterable\Models\Reacterable;
 use I\Love\ReactionType\Models\ReactionType;
+use I\Love\Support\Object\Nullable;
 
-interface Reacter
+interface Reacter extends
+    Nullable
 {
     public function getId(): string;
 
@@ -39,8 +41,4 @@ interface Reacter
     public function isEqualTo(self $that): bool;
 
     public function isNotEqualTo(self $that): bool;
-
-    public function isNull(): bool;
-
-    public function isNotNull(): bool;
 }
