@@ -15,8 +15,12 @@ namespace I\Love\Reactant\ReactionCounter\Models;
 
 use I\Love\Reactant\Models\Reactant;
 use I\Love\ReactionType\Models\ReactionType;
+use I\Love\Support\Object\Countable;
+use I\Love\Support\Object\Weightable;
 
-interface ReactionCounter
+interface ReactionCounter extends
+    Countable,
+    Weightable
 {
     public function getReactant(): Reactant;
 
@@ -25,16 +29,4 @@ interface ReactionCounter
     public function isReactionOfType(ReactionType $type): bool;
 
     public function isNotReactionOfType(ReactionType $type): bool;
-
-    public function getCount(): int;
-
-    public function getWeight(): float;
-
-    public function incrementCount(int $amount): void;
-
-    public function decrementCount(int $amount): void;
-
-    public function incrementWeight(float $amount): void;
-
-    public function decrementWeight(float $amount): void;
 }
