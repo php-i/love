@@ -18,8 +18,10 @@ use I\Love\Reactant\ReactionCounter\Models\ReactionCounter;
 use I\Love\Reactant\ReactionTotal\Models\ReactionTotal;
 use I\Love\Reacter\Models\Reacter;
 use I\Love\ReactionType\Models\ReactionType;
+use I\Love\Support\Object\Nullable;
 
-interface Reactant
+interface Reactant extends
+    Nullable
 {
     public function getId(): string;
 
@@ -46,10 +48,6 @@ interface Reactant
     public function isEqualTo(self $that): bool;
 
     public function isNotEqualTo(self $that): bool;
-
-    public function isNull(): bool;
-
-    public function isNotNull(): bool;
 
     public function createReactionCounterOfType(ReactionType $type): void;
 
